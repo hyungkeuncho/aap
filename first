@@ -1,0 +1,14 @@
+---
+- name: first file with visual studio code
+  hosts: all
+  tasks:
+    - name: linux package install
+      yum:
+        name: httpd
+        state: latest
+  
+    - name: httpd service start
+      service:
+        name: httpd
+        state: started
+        enabled: true
