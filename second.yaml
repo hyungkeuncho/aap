@@ -1,0 +1,6 @@
+---
+- name: test cmd
+  hosts: all
+  tasks:
+    - name: command ping
+      command: ping
