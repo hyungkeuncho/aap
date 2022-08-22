@@ -1,0 +1,6 @@
+---
+- name: kvm1 host test
+  hosts: all
+  tasks:
+    - name: ping test
+      command: ping     
