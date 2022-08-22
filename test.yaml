@@ -3,4 +3,5 @@
   hosts: all
   tasks:
     - name: ping test
-      ping   
+      ping:
+#   
