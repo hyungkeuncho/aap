@@ -1,0 +1,10 @@
+---
+- name: hostname check
+  hosts: all
+  tasks:
+    - name: hostname check with command
+      command: hostname
+      register: hostname_result
+    - name: debug
+      debug:
+        var: hostname_result.stdout
